@@ -8,7 +8,7 @@ No API keys are required by the WPVULNDB API.
 
 ### Get vulnerabilities affecting a particular..
 - WordPress core version: `ExWpvulndb.Core.get_by_version("4.8.1")`
-- WordPress plugin: `ExWpvulndb.Core.get_by_slug("eshop")`
+- WordPress plugin: `ExWpvulndb.Plugin.get_by_slug("eshop")`
 - WordPress theme: `ExWpvulndb.Theme.get_by_slug("pagelines")`
 
 ## License
