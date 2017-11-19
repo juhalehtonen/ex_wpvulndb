@@ -1,21 +1,10 @@
 # ExWpvulndb
-
-**TODO: Add description**
+Elixir API wrapper for the [WPScan Vulnerability Database](https://wpvulndb.com) API v2.
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `ex_wpvulndb` to your list of dependencies in `mix.exs`:
+## Usage
+TODO
 
-```elixir
-def deps do
-  [
-    {:ex_wpvulndb, "~> 0.1.0"}
-  ]
-end
-```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/ex_wpvulndb](https://hexdocs.pm/ex_wpvulndb).
-
+## License
+Licensed under MIT. See LICENSE for details.
