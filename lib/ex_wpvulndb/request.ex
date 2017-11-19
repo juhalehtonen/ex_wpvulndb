@@ -11,6 +11,7 @@ defmodule ExWpvulndb.Request do
   @doc """
   Send a GET request with a given API action and params.
   """
+  @spec get(String.t, String.t) :: tuple()
   def get(action, param) when is_binary(action) and is_binary(param) do
     url     = @api_url <> action <> "/" <> param
     headers = [{"Content-type", "application/x-www-form-urlencoded"}]

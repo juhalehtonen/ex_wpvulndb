@@ -12,5 +12,8 @@ No API keys are required by the WPVULNDB API.
 - WordPress plugin: `ExWpvulndb.Plugin.get_by_slug("eshop")`
 - WordPress theme: `ExWpvulndb.Theme.get_by_slug("pagelines")`
 
+## Testing
+You can run `mix credo` and `mix dialyzer` to ensure a level of code consistency and freedom from type errors.
+
 ## License
 Licensed under MIT. See LICENSE for details.

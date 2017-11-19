@@ -7,7 +7,9 @@ defmodule ExWpvulndb.Mixfile do
       version: "0.1.0",
       elixir: "~> 1.5",
       start_permanent: Mix.env == :prod,
-      deps: deps()
+      deps: deps(),
+      name: "ex_wpvulndb",
+      source_url: "https://github.com/juhalehtonen/ex_wpvulndb"
     ]
   end
 
@@ -22,7 +24,26 @@ defmodule ExWpvulndb.Mixfile do
   defp deps do
     [
       {:poison, "~> 3.1"},
-      {:httpoison, "~> 0.11.2"}
+      {:httpoison, "~> 0.11.2"},
+      {:credo, "~> 0.8", only: [:dev, :test], runtime: false},
+      {:dialyxir, "~> 0.5", only: [:dev], runtime: false},
+      {:ex_doc, "~> 0.14", only: :dev}
+    ]
+  end
+
+  defp description() do
+    "A minimal API wrapper for the WPScan Vulnerability Database API"
+  end
+
+  defp package() do
+    [
+      # This option is only needed when you don't want to use the OTP application name
+      name: "ex_wpvulndb",
+      # These are the default files included in the package
+      files: ["lib", "priv", "mix.exs", "README*", "readme*", "LICENSE*", "license*"],
+      maintainers: ["Juha Lehtonen"],
+      licenses: ["MIT"],
+      links: %{"GitHub" => "https://github.com/juhalehtonen/ex_wpvulndb"}
     ]
   end
 end

@@ -9,6 +9,7 @@ defmodule ExWpvulndb.Plugin do
 
   Slug should be the URL-friendly name of the plugin.
   """
+  @spec get_by_slug(String.t) :: tuple()
   def get_by_slug(slug) when is_binary(slug) do
     Request.get("plugins", slug)
   end

@@ -9,6 +9,7 @@ defmodule ExWpvulndb.Theme do
 
   Slug should be the URL-friendly name of the theme.
   """
+  @spec get_by_slug(String.t) :: tuple()
   def get_by_slug(slug) when is_binary(slug) do
     Request.get("themes", slug)
   end

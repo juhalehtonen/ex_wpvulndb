@@ -9,6 +9,7 @@ defmodule ExWpvulndb.Core do
 
   WP version should be given in either formats 4.8.3 or 483.
   """
+  @spec get_by_version(String.t) :: tuple()
   def get_by_version(version) when is_binary(version) do
     Request.get("wordpresses", String.replace(version, ".", ""))
   end
