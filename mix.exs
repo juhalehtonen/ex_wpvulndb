@@ -8,6 +8,8 @@ defmodule ExWpvulndb.Mixfile do
       elixir: "~> 1.5",
       start_permanent: Mix.env == :prod,
       deps: deps(),
+      description: description(),
+      package: package(),
       name: "ex_wpvulndb",
       source_url: "https://github.com/juhalehtonen/ex_wpvulndb"
     ]
