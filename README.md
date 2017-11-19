@@ -2,10 +2,7 @@
 Elixir API wrapper library for the [WPVULNDB / WPScan Vulnerability Database](https://wpvulndb.com) API v2.
 
 ## Installation
-Install from [Hex.pm](https://hex.pm/packages/ex_wpvulndb):
-```
-{:ex_wpvulndb, "~> 0.1.0"}
-```
+Install from [Hex.pm](https://hex.pm/packages/ex_wpvulndb): `{:ex_wpvulndb, "~> 0.1.0"}`
 
 ## Usage
 No API keys are required by the WPVULNDB API.
