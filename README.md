@@ -1,4 +1,7 @@
 # ex_wpvulndb
+
+[![Build Status](https://travis-ci.org/juhalehtonen/ex_wpvulndb.svg?branch=master)](https://travis-ci.org/juhalehtonen/ex_wpvulndb)
+
 Elixir API wrapper library for the [WPVULNDB / WPScan Vulnerability Database](https://wpvulndb.com) API v2.
 
 ## Installation
@@ -23,7 +26,7 @@ No API keys are required by the WPVULNDB API. Note that the API is intended to b
 All functions return either an `{:ok, results}` or an `{:error, reason}` tuple.
 
 ## Testing
-You can run `mix credo` and `mix dialyzer` to ensure a level of code consistency and freedom from type errors.
+You can run `mix test` for unit tests, and `mix credo` and `mix dialyzer` to ensure a level of code consistency and freedom from type errors.
 
 ## License
 Licensed under MIT. See LICENSE for details.
