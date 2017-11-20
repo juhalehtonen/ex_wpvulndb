@@ -28,7 +28,7 @@ defmodule ExWpvulndb.Mixfile do
       {:poison, "~> 3.1"},
       {:httpoison, "~> 0.11.2"},
       {:credo, "~> 0.8", only: [:dev, :test], runtime: false},
-      {:dialyxir, "~> 0.5", only: [:dev], runtime: false},
+      {:dialyxir, "~> 0.5", only: [:dev, :test], runtime: false},
       {:ex_doc, "~> 0.14", only: :dev}
     ]
   end
