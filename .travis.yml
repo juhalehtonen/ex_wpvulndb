@@ -15,4 +15,4 @@ before_script:
 script:
   - mix test
   - mix credo --strict
-  - dialyzer --no_check_plt --plt $PLT_LOCATION --no_native _build/test/lib/ex_uptimerobot/ebin
+  - dialyzer --no_check_plt --plt $PLT_LOCATION --no_native _build/test/lib/ex_wpvulndb/ebin
