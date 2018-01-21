@@ -10,16 +10,16 @@ defmodule ExWpvulndb.Theme do
 
   Slug should be the URL-friendly name of the theme.
   """
-  @spec get_by_slug(String.t) :: tuple()
+  @spec get_by_slug(String.t()) :: tuple()
   def get_by_slug(slug) when is_binary(slug) do
     with {:ok, body} <- Request.get("themes", slug),
-         {:ok, body} <- Parser.parse(body)
-    do
+         {:ok, body} <- Parser.parse(body) do
       {:ok, body}
     else
       {:error, reason} -> {:error, reason}
-      _                -> {:error, "Error getting theme vulnerabilities"}
+      _ -> {:error, "Error getting theme vulnerabilities"}
     end
   end
+
   def get_by_slug(_slug), do: {:error, "Invalid slug"}
 end
